@@ -13,6 +13,9 @@
 		AC73797028CF374B00C10ACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC73796E28CF374B00C10ACE /* Main.storyboard */; };
 		AC73797228CF374D00C10ACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC73797128CF374D00C10ACE /* Assets.xcassets */; };
 		AC73797528CF374D00C10ACE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC73797328CF374D00C10ACE /* LaunchScreen.storyboard */; };
+		AC80212728D1DB3D00CCBCA4 /* Mydata1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80212628D1DB3D00CCBCA4 /* Mydata1.swift */; };
+		AC80212928D1DCB600CCBCA4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80212828D1DCB600CCBCA4 /* DetailViewController.swift */; };
+		AC80212B28D1E39600CCBCA4 /* AddDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80212A28D1E39600CCBCA4 /* AddDataViewController.swift */; };
 		AC89C3F028D086C800EE0553 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89C3EF28D086C800EE0553 /* MainViewController.swift */; };
 		AC89C3F228D087F800EE0553 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89C3F128D087F800EE0553 /* Page2ViewController.swift */; };
 		AC89C3F428D08B1400EE0553 /* MyTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89C3F328D08B1400EE0553 /* MyTableViewCell1.swift */; };
@@ -27,6 +30,9 @@
 		AC73797128CF374D00C10ACE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC73797428CF374D00C10ACE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC73797628CF374D00C10ACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC80212628D1DB3D00CCBCA4 /* Mydata1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mydata1.swift; sourceTree = "<group>"; };
+		AC80212828D1DCB600CCBCA4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AC80212A28D1E39600CCBCA4 /* AddDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataViewController.swift; sourceTree = "<group>"; };
 		AC89C3EF28D086C800EE0553 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AC89C3F128D087F800EE0553 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		AC89C3F328D08B1400EE0553 /* MyTableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell1.swift; sourceTree = "<group>"; };
@@ -72,6 +78,9 @@
 				AC89C3EF28D086C800EE0553 /* MainViewController.swift */,
 				AC89C3F128D087F800EE0553 /* Page2ViewController.swift */,
 				AC89C3F328D08B1400EE0553 /* MyTableViewCell1.swift */,
+				AC80212628D1DB3D00CCBCA4 /* Mydata1.swift */,
+				AC80212828D1DCB600CCBCA4 /* DetailViewController.swift */,
+				AC80212A28D1E39600CCBCA4 /* AddDataViewController.swift */,
 			);
 			path = OnDeviceGit;
 			sourceTree = "<group>";
@@ -148,11 +157,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC89C3F228D087F800EE0553 /* Page2ViewController.swift in Sources */,
+				AC80212B28D1E39600CCBCA4 /* AddDataViewController.swift in Sources */,
 				AC89C3F428D08B1400EE0553 /* MyTableViewCell1.swift in Sources */,
 				AC73796D28CF374B00C10ACE /* ViewController.swift in Sources */,
 				AC73796928CF374B00C10ACE /* AppDelegate.swift in Sources */,
+				AC80212728D1DB3D00CCBCA4 /* Mydata1.swift in Sources */,
 				AC73796B28CF374B00C10ACE /* SceneDelegate.swift in Sources */,
 				AC89C3F028D086C800EE0553 /* MainViewController.swift in Sources */,
+				AC80212928D1DCB600CCBCA4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

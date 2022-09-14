@@ -16,19 +16,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView1: UITableView!
     var b1 = true
     
+    @IBOutlet weak var imgButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        MyImage.contentMode = .scaleToFill
+      //  MyImage.contentMode = .scaleToFill
         
         tableView1.delegate = self
         tableView1.dataSource = self
+        
+        imgButton.setTitle("Change \(name)", for: .normal)
     }
-
+    @IBAction func back2(_ sender: Any) {
+        
+        self.dismiss(animated: true)
+    }
+    
     @IBAction func Button1(_ sender: UIButton) {
         
+    
         
         if(b1){
             

@@ -13,15 +13,7 @@ class Page2ViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var sample: UIImageView!
     
-    struct data1{
-        let img:String
-        let name:String
-        let phone:String
-    }
     
-    let mylist:[data1] = [data1(img: "hot", name: "Shafiq", phone: "9963439228"),
-    data1(img: "download", name: "Shilpa", phone: "7989251662"),
-    data1(img: "abc", name: "NagaMani", phone: "7788997766")]
     
 
     override func viewDidLoad() {
@@ -32,6 +24,10 @@ class Page2ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         table1.dataSource = self
 
         // Do any additional setup after loading the view.
+    }
+    @IBAction func back1(_ sender: Any) {
+        
+        self.dismiss(animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -52,7 +48,17 @@ class Page2ViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        ind = indexPath.row
         
-        sample.image = UIImage(named: "\(mylist[indexPath.row].img)")
+        let vc = storyboard?.instantiateViewController(withIdentifier: "detail") as! DetailViewController
+        
+        vc.modalTransitionStyle = .crossDissolve
+        
+        vc.modalPresentationStyle = .fullScreen
+        
+        present(vc, animated: true)
+        
+        
+      //  sample.image = UIImage(named: "\(mylist[indexPath.row].img)")
     }
 }
