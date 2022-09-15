@@ -219,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B10-Zy-hBX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318.84057971014494" y="623.4375"/>
+            <point key="canvasLocation" x="319" y="860"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="bcX-FC-378">
@@ -280,7 +280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Rx-Se-SJs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1330.4347826086957" y="622.76785714285711"/>
+            <point key="canvasLocation" x="1361" y="860"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -366,7 +366,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318.84057971014494" y="-293.30357142857139"/>
+            <point key="canvasLocation" x="348" y="-597"/>
         </scene>
         <!--Add Data View Controller-->
         <scene sceneID="NjH-Ks-hvV">
@@ -376,21 +376,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gV-Ys-1Ix">
-                                <rect key="frame" x="20" y="64" width="384" height="40"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Add Data">
-                                        <attributes>
-                                            <color key="NSColor" red="0.029972863021754392" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="36" name=".SFNS-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Image Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="69z-lG-je4">
-                                <rect key="frame" x="20" y="154" width="374" height="50"/>
+                                <rect key="frame" x="20" y="157" width="374" height="50"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="aSh-x6-oxY"/>
@@ -399,7 +386,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Candidate Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ofh-kV-1tG">
-                                <rect key="frame" x="20" y="224" width="374" height="50"/>
+                                <rect key="frame" x="20" y="227" width="374" height="50"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="M5J-M9-CVm"/>
@@ -408,7 +395,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v6i-8u-hwp">
-                                <rect key="frame" x="20" y="294" width="374" height="50"/>
+                                <rect key="frame" x="20" y="297" width="374" height="50"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="p0C-92-vBG"/>
@@ -417,7 +404,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkE-dI-irz">
-                                <rect key="frame" x="132" y="374" width="150" height="50"/>
+                                <rect key="frame" x="132" y="377" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="Vyw-xk-GeO"/>
                                     <constraint firstAttribute="height" constant="50" id="n4n-rT-0rW"/>
@@ -426,6 +413,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Add">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addbtn:" destination="QVp-ct-qLn" eventType="touchUpInside" id="tWa-Ek-KBa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJN-1Y-2Lc">
                                 <rect key="frame" x="300" y="69" width="104" height="31"/>
@@ -436,6 +426,19 @@
                                     <action selector="back2:" destination="QVp-ct-qLn" eventType="touchUpInside" id="sNy-nS-g5o"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gV-Ys-1Ix">
+                                <rect key="frame" x="20" y="63" width="384" height="43"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Add Data">
+                                        <attributes>
+                                            <color key="NSColor" red="0.029972863021754392" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="36"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4F2-x7-7ZL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -456,10 +459,16 @@
                             <constraint firstItem="69z-lG-je4" firstAttribute="top" secondItem="7gV-Ys-1Ix" secondAttribute="bottom" constant="50" id="wMw-ja-VJe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label1" destination="7gV-Ys-1Ix" id="BNW-Hc-7hu"/>
+                        <outlet property="txt1" destination="69z-lG-je4" id="pyV-uQ-vlr"/>
+                        <outlet property="txt2" destination="ofh-kV-1tG" id="18q-4t-hPU"/>
+                        <outlet property="txt3" destination="v6i-8u-hwp" id="0yD-gO-QjU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="itg-9e-ff2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1328.985507246377" y="-46.205357142857139"/>
+            <point key="canvasLocation" x="319" y="125"/>
         </scene>
     </scenes>
     <resources>

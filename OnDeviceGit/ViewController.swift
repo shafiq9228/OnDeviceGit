@@ -65,7 +65,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
      ///   cell.
         cell.textLabel?.text = "\(listData1[indexPath.row])"
-        
+                
     
         return cell
     }
