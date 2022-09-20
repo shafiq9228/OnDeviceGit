@@ -52,6 +52,18 @@ struct Fruits: Identifiable{
     
 }
 
+struct WebObject: Decodable{
+    //var uid:String
+    var name:String
+    var Course:String
+}
+
+struct WebStatus: Decodable{
+    var status:Int?
+    var status_message:String?
+    var data:String?
+}
+
 var A1 = Basket(id: 1, colleg: "JNTUq", rank: 10, name: "Shafiq")
 
 

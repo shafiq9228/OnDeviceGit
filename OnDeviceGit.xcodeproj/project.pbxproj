@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,8 @@
 		AC89C3F028D086C800EE0553 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89C3EF28D086C800EE0553 /* MainViewController.swift */; };
 		AC89C3F228D087F800EE0553 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89C3F128D087F800EE0553 /* Page2ViewController.swift */; };
 		AC89C3F428D08B1400EE0553 /* MyTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89C3F328D08B1400EE0553 /* MyTableViewCell1.swift */; };
+		ACB040CA28D9CB3600507497 /* Test1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB040C928D9CB3600507497 /* Test1.swift */; };
+		ACB040CC28D9CB7900507497 /* Web1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB040CB28D9CB7900507497 /* Web1ViewController.swift */; };
 		ACEE207728D330FE00C309E7 /* extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEE207628D330FE00C309E7 /* extras.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		AC89C3EF28D086C800EE0553 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AC89C3F128D087F800EE0553 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		AC89C3F328D08B1400EE0553 /* MyTableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell1.swift; sourceTree = "<group>"; };
+		ACB040C928D9CB3600507497 /* Test1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1.swift; sourceTree = "<group>"; };
+		ACB040CB28D9CB7900507497 /* Web1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web1ViewController.swift; sourceTree = "<group>"; };
 		ACEE207628D330FE00C309E7 /* extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extras.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +88,8 @@
 				AC80212828D1DCB600CCBCA4 /* DetailViewController.swift */,
 				AC80212A28D1E39600CCBCA4 /* AddDataViewController.swift */,
 				ACEE207628D330FE00C309E7 /* extras.swift */,
+				ACB040C928D9CB3600507497 /* Test1.swift */,
+				ACB040CB28D9CB7900507497 /* Web1ViewController.swift */,
 			);
 			path = OnDeviceGit;
 			sourceTree = "<group>";
@@ -124,7 +130,7 @@
 				};
 			};
 			buildConfigurationList = AC73796028CF374B00C10ACE /* Build configuration list for PBXProject "OnDeviceGit" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -162,11 +168,13 @@
 				AC89C3F228D087F800EE0553 /* Page2ViewController.swift in Sources */,
 				AC80212B28D1E39600CCBCA4 /* AddDataViewController.swift in Sources */,
 				ACEE207728D330FE00C309E7 /* extras.swift in Sources */,
+				ACB040CA28D9CB3600507497 /* Test1.swift in Sources */,
 				AC89C3F428D08B1400EE0553 /* MyTableViewCell1.swift in Sources */,
 				AC73796D28CF374B00C10ACE /* ViewController.swift in Sources */,
 				AC73796928CF374B00C10ACE /* AppDelegate.swift in Sources */,
 				AC80212728D1DB3D00CCBCA4 /* Mydata1.swift in Sources */,
 				AC73796B28CF374B00C10ACE /* SceneDelegate.swift in Sources */,
+				ACB040CC28D9CB7900507497 /* Web1ViewController.swift in Sources */,
 				AC89C3F028D086C800EE0553 /* MainViewController.swift in Sources */,
 				AC80212928D1DCB600CCBCA4 /* DetailViewController.swift in Sources */,
 			);
