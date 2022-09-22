@@ -41,65 +41,13 @@ class Web1ViewController: UIViewController {
     
     
     @IBAction func getArray(_ sender: UIButton) {
-        GetArray()
+      
         
     }
     
   
     
-    func GetArray(){
-        
-        guard let url = URL(string: "https://androiddada.com/OnDevice/api.php/arraylist") else {
-            
-            print("Techniocal error")
-            
-            return
-        }
-        var urlrequest = URLRequest(url: url)
-         urlrequest.setValue("WitrdHBRcmpSMjJ5L3BLa0NITXY1Zz09OjpL9i8Ocbb3tPpOq09kfTTd", forHTTPHeaderField: "Apikey")
-         urlrequest.httpMethod = "POST"
-        
-        let mydata = URLSession.shared.dataTask(with: urlrequest) { data, resp, err in
-            if let er1 = err{
-                
-                print("there is some error: ", er1)
-                return
-            }
-            
-            guard let data = data else {
-                print("Data error: ")
-                
-                return
-            }
-            DispatchQueue.main.async {
-            do{
-                
-                let jsonData = try JSONDecoder().decode( [WebObject].self, from: data)
-                
-                
-                myTablelist = jsonData
-                
-              //  self.mylist = jsonData
-                
-               // self.tableView.dataSource = self
-                
-                
-                print(jsonData)
-                
-            } catch let er2{
-                
-                print("Some catch error", er2)
-            }
-                
-            }
-            
-            
-            
-        }
-        
-        mydata.resume()
-        
-    }
+  
     
     
     func GetObject(){
