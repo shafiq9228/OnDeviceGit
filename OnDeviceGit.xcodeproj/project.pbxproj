@@ -21,6 +21,7 @@
 		AC89C3F428D08B1400EE0553 /* MyTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89C3F328D08B1400EE0553 /* MyTableViewCell1.swift */; };
 		ACB040CA28D9CB3600507497 /* Test1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB040C928D9CB3600507497 /* Test1.swift */; };
 		ACB040CC28D9CB7900507497 /* Web1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB040CB28D9CB7900507497 /* Web1ViewController.swift */; };
+		ACE7321928DB1E4600826BBA /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7321828DB1E4600826BBA /* LoadViewController.swift */; };
 		ACEE207728D330FE00C309E7 /* extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEE207628D330FE00C309E7 /* extras.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		AC89C3F328D08B1400EE0553 /* MyTableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell1.swift; sourceTree = "<group>"; };
 		ACB040C928D9CB3600507497 /* Test1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1.swift; sourceTree = "<group>"; };
 		ACB040CB28D9CB7900507497 /* Web1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web1ViewController.swift; sourceTree = "<group>"; };
+		ACE7321828DB1E4600826BBA /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 		ACEE207628D330FE00C309E7 /* extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extras.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 				ACEE207628D330FE00C309E7 /* extras.swift */,
 				ACB040C928D9CB3600507497 /* Test1.swift */,
 				ACB040CB28D9CB7900507497 /* Web1ViewController.swift */,
+				ACE7321828DB1E4600826BBA /* LoadViewController.swift */,
 			);
 			path = OnDeviceGit;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				AC80212B28D1E39600CCBCA4 /* AddDataViewController.swift in Sources */,
 				ACEE207728D330FE00C309E7 /* extras.swift in Sources */,
 				ACB040CA28D9CB3600507497 /* Test1.swift in Sources */,
+				ACE7321928DB1E4600826BBA /* LoadViewController.swift in Sources */,
 				AC89C3F428D08B1400EE0553 /* MyTableViewCell1.swift in Sources */,
 				AC73796D28CF374B00C10ACE /* ViewController.swift in Sources */,
 				AC73796928CF374B00C10ACE /* AppDelegate.swift in Sources */,

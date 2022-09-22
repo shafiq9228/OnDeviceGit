@@ -53,10 +53,12 @@ struct Fruits: Identifiable{
 }
 
 struct WebObject: Decodable{
-    //var uid:String
-    var name:String
-    var Course:String
+    var id:String?
+    var name:String?
+    var Course:String?
 }
+
+
 
 struct WebStatus: Decodable{
     var status:Int?
