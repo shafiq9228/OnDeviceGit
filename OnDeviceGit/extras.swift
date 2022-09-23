@@ -59,6 +59,13 @@ struct WebObject: Decodable{
 }
 
 
+struct WebList: Decodable{
+    var uid:String?
+    var name:String?
+    var course:String?
+}
+
+
 
 struct WebStatus: Decodable{
     var status:Int?
