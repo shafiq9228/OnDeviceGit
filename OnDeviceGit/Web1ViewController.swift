@@ -10,18 +10,10 @@ import UIKit
 class Web1ViewController: UIViewController {
     
     
-    
-    
-    
-    
     @IBOutlet weak var responseTxt: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
-    
-    
-    
-    
-    
+   
     var obj1:WebObject = WebObject(name: "", Course: "")
     
     override func viewDidLoad() {

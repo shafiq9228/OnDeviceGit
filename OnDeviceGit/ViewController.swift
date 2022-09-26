@@ -7,12 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
    
-   
-    @IBOutlet weak var txt1: UITextField!
-    
-    @IBOutlet weak var out1: UILabel!
+
+    @IBOutlet weak var img: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,77 +23,42 @@ class ViewController: UIViewController {
         self.dismiss(animated: true)
     }
     
+    @IBAction func gallery(_ sender: Any) {
+        
+        let pc = UIImagePickerController()
+        pc.sourceType = .photoLibrary
+        pc.delegate = self
+        pc.allowsEditing = true
+        self.present(pc, animated: true)
+    }
     
-    @IBAction func submitbt(_ sender: Any) {
+    @IBAction func openCamera(_ sender: Any) {
         
+        let pc = UIImagePickerController()
+        pc.sourceType = .camera
+        pc.delegate = self
+        pc.allowsEditing = false
+        self.present(pc, animated: true)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        SendBody(id: "\(txt1.text ?? "0")")
+        if let selectedImage = info[.editedImage] as? UIImage {
+            img.image = selectedImage
+            
+        } else {
+            print("No image found")
+        }
         
-       // print(txt1.text)
+        picker.dismiss(animated: true)
     }
     
     
-    func SendBody(id:String){
-        guard let url = URL(string:"https://androiddada.com/OnDevice/api.php/body") else {
-            print("Techniocal error")
-            
-            return }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        print(" cancelled selction")
         
-        var urlrequest = URLRequest(url: url)
-         urlrequest.setValue("WitrdHBRcmpSMjJ5L3BLa0NITXY1Zz09OjpL9i8Ocbb3tPpOq09kfTTd", forHTTPHeaderField: "Apikey")
-         urlrequest.httpMethod = "POST"
-        
-        let dicBody:[String:String] = ["id":id]
-        
-        let bodyData = try? JSONSerialization.data(withJSONObject: dicBody)
-        
-        urlrequest.httpBody = bodyData
-        
-        
-        let mydata = URLSession.shared.dataTask(with: urlrequest) { data, resp, err in
-            if let er1 = err{
-                
-                print("there is some error: ", er1)
-                return
-            }
-            
-            guard let data = data else {
-                print("Data error: ")
-                
-                return
-            }
-           
-            do{
-                
-                let jsonData = try JSONDecoder().decode( WebObject.self, from: data)
-                
-                
-                
-                print(jsonData)
-                
-                
-                
-                DispatchQueue.main.async {
-                
-                    self.out1.text = "\(jsonData)"
-                    
-                }
-                
-              
-                
-            } catch let er2{
-                
-                print("Some catch error", er2)
-            }
-                
-            
-            
-            
-            
-        }
-        
-        mydata.resume()
-        
+        picker.dismiss(animated: true)
     }
     
    

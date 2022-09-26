@@ -330,6 +330,8 @@
 				DEVELOPMENT_TEAM = VC4GZ6A6HG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OnDeviceGit/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Camera for our App";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow gallery for App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -360,6 +362,8 @@
 				DEVELOPMENT_TEAM = VC4GZ6A6HG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OnDeviceGit/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Camera for our App";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow gallery for App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
