@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		877BF8B123DB6F9C09665871 /* Pods_OnDeviceGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164C8D574A44A4209BF88576 /* Pods_OnDeviceGit.framework */; };
 		AC73796928CF374B00C10ACE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73796828CF374B00C10ACE /* AppDelegate.swift */; };
 		AC73796B28CF374B00C10ACE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73796A28CF374B00C10ACE /* SceneDelegate.swift */; };
 		AC73796D28CF374B00C10ACE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73796C28CF374B00C10ACE /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		164C8D574A44A4209BF88576 /* Pods_OnDeviceGit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnDeviceGit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC73796528CF374B00C10ACE /* OnDeviceGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnDeviceGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC73796828CF374B00C10ACE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC73796A28CF374B00C10ACE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +46,8 @@
 		ACB040CB28D9CB7900507497 /* Web1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web1ViewController.swift; sourceTree = "<group>"; };
 		ACE7321828DB1E4600826BBA /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 		ACEE207628D330FE00C309E7 /* extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extras.swift; sourceTree = "<group>"; };
+		AF100D327E167C85E1CFDC1B /* Pods-OnDeviceGit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnDeviceGit.debug.xcconfig"; path = "Target Support Files/Pods-OnDeviceGit/Pods-OnDeviceGit.debug.xcconfig"; sourceTree = "<group>"; };
+		C2CCD9D14C34DCAEBF4C914D /* Pods-OnDeviceGit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnDeviceGit.release.xcconfig"; path = "Target Support Files/Pods-OnDeviceGit/Pods-OnDeviceGit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +55,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				877BF8B123DB6F9C09665871 /* Pods_OnDeviceGit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94C3547ACD55CD33348C8C8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				164C8D574A44A4209BF88576 /* Pods_OnDeviceGit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC73795C28CF374B00C10ACE = {
 			isa = PBXGroup;
 			children = (
 				AC73796728CF374B00C10ACE /* OnDeviceGit */,
 				AC73796628CF374B00C10ACE /* Products */,
+				FD716492D83B518F7E36BC8B /* Pods */,
+				94C3547ACD55CD33348C8C8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +112,16 @@
 			path = OnDeviceGit;
 			sourceTree = "<group>";
 		};
+		FD716492D83B518F7E36BC8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF100D327E167C85E1CFDC1B /* Pods-OnDeviceGit.debug.xcconfig */,
+				C2CCD9D14C34DCAEBF4C914D /* Pods-OnDeviceGit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC73797928CF374D00C10ACE /* Build configuration list for PBXNativeTarget "OnDeviceGit" */;
 			buildPhases = (
+				915590BB985404DDAB1034F5 /* [CP] Check Pods Manifest.lock */,
 				AC73796128CF374B00C10ACE /* Sources */,
 				AC73796228CF374B00C10ACE /* Frameworks */,
 				AC73796328CF374B00C10ACE /* Resources */,
+				21AA6D9A9BC1D17E9C34F5D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +189,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21AA6D9A9BC1D17E9C34F5D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnDeviceGit/Pods-OnDeviceGit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnDeviceGit/Pods-OnDeviceGit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OnDeviceGit/Pods-OnDeviceGit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		915590BB985404DDAB1034F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnDeviceGit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC73796128CF374B00C10ACE /* Sources */ = {
@@ -322,6 +391,7 @@
 		};
 		AC73797A28CF374D00C10ACE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF100D327E167C85E1CFDC1B /* Pods-OnDeviceGit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -354,6 +424,7 @@
 		};
 		AC73797B28CF374D00C10ACE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2CCD9D14C34DCAEBF4C914D /* Pods-OnDeviceGit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

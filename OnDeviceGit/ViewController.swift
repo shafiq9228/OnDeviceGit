@@ -6,16 +6,21 @@
 //
 
 import UIKit
+import Kingfisher
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController {
    
 
     @IBOutlet weak var img: UIImageView!
+    
+    let myurl = "https://lumiere-a.akamaihd.net/v1/images/sa_pixar_virtualbg_coco_16x9_9ccd7110.jpeg"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-      //  MyImage.contentMode = .scaleToFill
+        let url = URL(string: myurl)
+       
+        img.kf.setImage(with: url)
     
     }
     @IBAction func back2(_ sender: Any) {
@@ -25,41 +30,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func gallery(_ sender: Any) {
         
-        let pc = UIImagePickerController()
-        pc.sourceType = .photoLibrary
-        pc.delegate = self
-        pc.allowsEditing = true
-        self.present(pc, animated: true)
+        
     }
     
     @IBAction func openCamera(_ sender: Any) {
         
-        let pc = UIImagePickerController()
-        pc.sourceType = .camera
-        pc.delegate = self
-        pc.allowsEditing = false
-        self.present(pc, animated: true)
-    }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
-        if let selectedImage = info[.editedImage] as? UIImage {
-            img.image = selectedImage
-            
-        } else {
-            print("No image found")
-        }
-        
-        picker.dismiss(animated: true)
+       
     }
     
     
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        print(" cancelled selction")
-        
-        picker.dismiss(animated: true)
-    }
     
    
     
