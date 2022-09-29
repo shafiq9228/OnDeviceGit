@@ -17,6 +17,8 @@
 		AC80212728D1DB3D00CCBCA4 /* Mydata1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80212628D1DB3D00CCBCA4 /* Mydata1.swift */; };
 		AC80212928D1DCB600CCBCA4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80212828D1DCB600CCBCA4 /* DetailViewController.swift */; };
 		AC80212B28D1E39600CCBCA4 /* AddDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80212A28D1E39600CCBCA4 /* AddDataViewController.swift */; };
+		AC89972128E5A29C00A636DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC89972028E5A29C00A636DE /* GoogleService-Info.plist */; };
+		AC89972328E5A52400A636DE /* FireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89972228E5A52400A636DE /* FireViewController.swift */; };
 		AC89C3F028D086C800EE0553 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89C3EF28D086C800EE0553 /* MainViewController.swift */; };
 		AC89C3F228D087F800EE0553 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89C3F128D087F800EE0553 /* Page2ViewController.swift */; };
 		AC89C3F428D08B1400EE0553 /* MyTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89C3F328D08B1400EE0553 /* MyTableViewCell1.swift */; };
@@ -39,6 +41,8 @@
 		AC80212628D1DB3D00CCBCA4 /* Mydata1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mydata1.swift; sourceTree = "<group>"; };
 		AC80212828D1DCB600CCBCA4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		AC80212A28D1E39600CCBCA4 /* AddDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataViewController.swift; sourceTree = "<group>"; };
+		AC89972028E5A29C00A636DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/Kingfisher-7.3.2/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC89972228E5A52400A636DE /* FireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireViewController.swift; sourceTree = "<group>"; };
 		AC89C3EF28D086C800EE0553 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AC89C3F128D087F800EE0553 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		AC89C3F328D08B1400EE0553 /* MyTableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell1.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 				AC73797128CF374D00C10ACE /* Assets.xcassets */,
 				AC73797328CF374D00C10ACE /* LaunchScreen.storyboard */,
 				AC73797628CF374D00C10ACE /* Info.plist */,
+				AC89972028E5A29C00A636DE /* GoogleService-Info.plist */,
 				AC89C3EF28D086C800EE0553 /* MainViewController.swift */,
 				AC89C3F128D087F800EE0553 /* Page2ViewController.swift */,
 				AC89C3F328D08B1400EE0553 /* MyTableViewCell1.swift */,
@@ -108,6 +113,7 @@
 				ACB040C928D9CB3600507497 /* Test1.swift */,
 				ACB040CB28D9CB7900507497 /* Web1ViewController.swift */,
 				ACE7321828DB1E4600826BBA /* LoadViewController.swift */,
+				AC89972228E5A52400A636DE /* FireViewController.swift */,
 			);
 			path = OnDeviceGit;
 			sourceTree = "<group>";
@@ -118,7 +124,6 @@
 				AF100D327E167C85E1CFDC1B /* Pods-OnDeviceGit.debug.xcconfig */,
 				C2CCD9D14C34DCAEBF4C914D /* Pods-OnDeviceGit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -183,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC73797528CF374D00C10ACE /* LaunchScreen.storyboard in Resources */,
+				AC89972128E5A29C00A636DE /* GoogleService-Info.plist in Resources */,
 				AC73797228CF374D00C10ACE /* Assets.xcassets in Resources */,
 				AC73797028CF374B00C10ACE /* Main.storyboard in Resources */,
 			);
@@ -247,6 +253,7 @@
 				AC73796928CF374B00C10ACE /* AppDelegate.swift in Sources */,
 				AC80212728D1DB3D00CCBCA4 /* Mydata1.swift in Sources */,
 				AC73796B28CF374B00C10ACE /* SceneDelegate.swift in Sources */,
+				AC89972328E5A52400A636DE /* FireViewController.swift in Sources */,
 				ACB040CC28D9CB7900507497 /* Web1ViewController.swift in Sources */,
 				AC89C3F028D086C800EE0553 /* MainViewController.swift in Sources */,
 				AC80212928D1DCB600CCBCA4 /* DetailViewController.swift in Sources */,

@@ -7,5 +7,8 @@ target 'OnDeviceGit' do
 
   # Pods for OnDeviceGit
     pod 'Kingfisher'
+    pod 'FirebaseAnalytics'
+    pod 'FirebaseAuth'
+    pod 'FirebaseFirestore'
 
 end
