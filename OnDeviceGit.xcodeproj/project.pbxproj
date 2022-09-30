@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		877BF8B123DB6F9C09665871 /* Pods_OnDeviceGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164C8D574A44A4209BF88576 /* Pods_OnDeviceGit.framework */; };
+		AC48EC9628E6F455001D1B6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC48EC9528E6F455001D1B6F /* GoogleService-Info.plist */; };
 		AC73796928CF374B00C10ACE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73796828CF374B00C10ACE /* AppDelegate.swift */; };
 		AC73796B28CF374B00C10ACE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73796A28CF374B00C10ACE /* SceneDelegate.swift */; };
 		AC73796D28CF374B00C10ACE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73796C28CF374B00C10ACE /* ViewController.swift */; };
@@ -17,7 +18,6 @@
 		AC80212728D1DB3D00CCBCA4 /* Mydata1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80212628D1DB3D00CCBCA4 /* Mydata1.swift */; };
 		AC80212928D1DCB600CCBCA4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80212828D1DCB600CCBCA4 /* DetailViewController.swift */; };
 		AC80212B28D1E39600CCBCA4 /* AddDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80212A28D1E39600CCBCA4 /* AddDataViewController.swift */; };
-		AC89972128E5A29C00A636DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC89972028E5A29C00A636DE /* GoogleService-Info.plist */; };
 		AC89972328E5A52400A636DE /* FireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89972228E5A52400A636DE /* FireViewController.swift */; };
 		AC89C3F028D086C800EE0553 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89C3EF28D086C800EE0553 /* MainViewController.swift */; };
 		AC89C3F228D087F800EE0553 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89C3F128D087F800EE0553 /* Page2ViewController.swift */; };
@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		164C8D574A44A4209BF88576 /* Pods_OnDeviceGit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnDeviceGit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC48EC9528E6F455001D1B6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC73796528CF374B00C10ACE /* OnDeviceGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnDeviceGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC73796828CF374B00C10ACE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC73796A28CF374B00C10ACE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		AC80212628D1DB3D00CCBCA4 /* Mydata1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mydata1.swift; sourceTree = "<group>"; };
 		AC80212828D1DCB600CCBCA4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		AC80212A28D1E39600CCBCA4 /* AddDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataViewController.swift; sourceTree = "<group>"; };
-		AC89972028E5A29C00A636DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/Kingfisher-7.3.2/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC89972228E5A52400A636DE /* FireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireViewController.swift; sourceTree = "<group>"; };
 		AC89C3EF28D086C800EE0553 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AC89C3F128D087F800EE0553 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 				AC73797128CF374D00C10ACE /* Assets.xcassets */,
 				AC73797328CF374D00C10ACE /* LaunchScreen.storyboard */,
 				AC73797628CF374D00C10ACE /* Info.plist */,
-				AC89972028E5A29C00A636DE /* GoogleService-Info.plist */,
+				AC48EC9528E6F455001D1B6F /* GoogleService-Info.plist */,
 				AC89C3EF28D086C800EE0553 /* MainViewController.swift */,
 				AC89C3F128D087F800EE0553 /* Page2ViewController.swift */,
 				AC89C3F328D08B1400EE0553 /* MyTableViewCell1.swift */,
@@ -188,7 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC73797528CF374D00C10ACE /* LaunchScreen.storyboard in Resources */,
-				AC89972128E5A29C00A636DE /* GoogleService-Info.plist in Resources */,
+				AC48EC9628E6F455001D1B6F /* GoogleService-Info.plist in Resources */,
 				AC73797228CF374D00C10ACE /* Assets.xcassets in Resources */,
 				AC73797028CF374B00C10ACE /* Main.storyboard in Resources */,
 			);

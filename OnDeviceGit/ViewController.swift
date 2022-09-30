@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Kingfisher
+//import Kingfisher
 
 class ViewController: UIViewController {
    
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         let url = URL(string: myurl)
        
-        img.kf.setImage(with: url)
+       // img.kf.setImage(with: url)
     
     }
     @IBAction func back2(_ sender: Any) {

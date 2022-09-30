@@ -65,6 +65,11 @@ struct WebList: Decodable{
     var course:String?
 }
 
+struct FireModel: Decodable{
+    var name:String
+    var city:String
+}
+
 
 
 struct WebStatus: Decodable{
