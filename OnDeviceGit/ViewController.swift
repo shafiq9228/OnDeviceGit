@@ -11,33 +11,58 @@ import UIKit
 class ViewController: UIViewController {
    
 
-    @IBOutlet weak var img: UIImageView!
     
-    let myurl = "https://lumiere-a.akamaihd.net/v1/images/sa_pixar_virtualbg_coco_16x9_9ccd7110.jpeg"
+    @IBOutlet weak var mobileInp: UITextField!
+    
+    @IBOutlet weak var passInp: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: myurl)
-       
-       // img.kf.setImage(with: url)
+        let loginValue = UserDefaults.standard.integer(forKey: "login")
+        
+        print("LoginValue = \(loginValue)")
+        
+        if(loginValue == 1){
+        
+        DispatchQueue.main.async {
+            let vc1 = self.storyboard?.instantiateViewController(withIdentifier: "page2") as! Page2ViewController
+            vc1.modalPresentationStyle = .fullScreen
+            self.present(vc1, animated: true)
+        }
+           
+        }
     
     }
-    @IBAction func back2(_ sender: Any) {
-        
-        self.dismiss(animated: true)
-    }
     
-    @IBAction func gallery(_ sender: Any) {
+ 
+    
+    
+    @IBAction func submitCredntials(_ sender: Any) {
         
+        
+        let mobileTxt = mobileInp.text
+        let passtxt = passInp.text
+        
+        if(mobileTxt == "9963439228" && passtxt == "12345"){
+            
+            print("yes correcr credentials")
+            
+            UserDefaults.standard.set(1, forKey: "login")
+            
+            let vc = storyboard?.instantiateViewController(withIdentifier: "page2") as! Page2ViewController
+            
+            vc.modalPresentationStyle = .fullScreen
+            
+            self.present(vc, animated: true)
+        } else {
+            print("wrong login credentials")
+            
+            
+        }
         
     }
-    
-    @IBAction func openCamera(_ sender: Any) {
-        
-       
-    }
-    
     
     
    
