@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+
 
 class Page2ViewController: UIViewController {
     
@@ -36,9 +38,16 @@ class Page2ViewController: UIViewController {
     }
     @IBAction func logoutPage(_ sender: Any) {
         
-        self.dismiss(animated: true)
         
-        UserDefaults.standard.set(0, forKey: "login")
+        let firebaseAuth = Auth.auth()
+      do {
+        try firebaseAuth.signOut()
+      } catch let signOutError as NSError {
+        print("Error signing out: %@", signOutError)
+      }
+        
+        self.dismiss(animated: true)
+    
         UserDefaults.standard.set(0, forKey: "counter")
     }
 }

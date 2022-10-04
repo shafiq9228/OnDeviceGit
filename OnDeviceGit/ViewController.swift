@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 //import Kingfisher
 
 class ViewController: UIViewController {
@@ -20,19 +21,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let loginValue = UserDefaults.standard.integer(forKey: "login")
-        
-        print("LoginValue = \(loginValue)")
-        
-        if(loginValue == 1){
-        
-        DispatchQueue.main.async {
-            let vc1 = self.storyboard?.instantiateViewController(withIdentifier: "page2") as! Page2ViewController
-            vc1.modalPresentationStyle = .fullScreen
-            self.present(vc1, animated: true)
+        if(Auth.auth().currentUser != nil){
+            DispatchQueue.main.async {
+                let vc1 = self.storyboard?.instantiateViewController(withIdentifier: "page2") as! Page2ViewController
+                vc1.modalPresentationStyle = .fullScreen
+                self.present(vc1, animated: true)
+            }
+            
+        } else {
+            
+            print("user is not logged in ")
         }
-           
-        }
+        
+        
     
     }
     
@@ -42,26 +43,47 @@ class ViewController: UIViewController {
     @IBAction func submitCredntials(_ sender: Any) {
         
         
+        print("hello")
         let mobileTxt = mobileInp.text
         let passtxt = passInp.text
         
-        if(mobileTxt == "9963439228" && passtxt == "12345"){
+        SignUp(email: mobileTxt!, pass: passtxt!)
+        
+    }
+    
+    func SignIn(email:String, pass:String){
+        Auth.auth().signIn(withEmail: email, password: pass){ authResult, error in
+           // guard let strongSelf = self else { return }
             
-            print("yes correcr credentials")
             
-            UserDefaults.standard.set(1, forKey: "login")
+            if let err = error{
+                print(err)
+            } else {
+                print(authResult?.user.uid)
+                
+                let vc1 = self.storyboard?.instantiateViewController(withIdentifier: "page2") as! Page2ViewController
+                vc1.modalPresentationStyle = .fullScreen
+                self.present(vc1, animated: true)
+            }
             
-            let vc = storyboard?.instantiateViewController(withIdentifier: "page2") as! Page2ViewController
-            
-            vc.modalPresentationStyle = .fullScreen
-            
-            self.present(vc, animated: true)
-        } else {
-            print("wrong login credentials")
-            
+          }
+    }
+    
+    func SignUp(email:String, pass:String){
+        
+        
+        Auth.auth().createUser(withEmail: email, password: pass){ authResult, error in
+            if let err = error{
+                print(err)
+            } else {
+                print(authResult?.user.uid)
+                
+                let vc1 = self.storyboard?.instantiateViewController(withIdentifier: "page2") as! Page2ViewController
+                vc1.modalPresentationStyle = .fullScreen
+                self.present(vc1, animated: true)
+            }
             
         }
-        
     }
     
     
