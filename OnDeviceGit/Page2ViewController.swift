@@ -16,6 +16,8 @@ class Page2ViewController: UIViewController {
     
     var num = 0
     
+    var res = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,19 +25,12 @@ class Page2ViewController: UIViewController {
         
         let retrivedValue = UserDefaults.standard.integer(forKey: "counter")
         
-        num = retrivedValue
-        numtxt.text = "\(retrivedValue)"
+       // num = retrivedValue
+       // numtxt.text = "\(retrivedValue)"
    
     }
     
-    @IBAction func countNumber(_ sender: Any) {
-        
-        num = num + 1
-        
-        UserDefaults.standard.set(num, forKey: "counter")
-        
-        numtxt.text = "\(num)"
-    }
+   
     @IBAction func logoutPage(_ sender: Any) {
         
         
@@ -50,4 +45,33 @@ class Page2ViewController: UIViewController {
     
         UserDefaults.standard.set(0, forKey: "counter")
     }
+    
+    
+    @IBAction func numberAction(_ sender: Any) {
+        
+        let x1 = sender as? UIButton
+        
+        let num1 = x1?.titleLabel?.text
+        
+        print(num1!)
+        
+        if(num1! == "C"){
+            numtxt.text = "0"
+            res = ""
+            
+        } else {
+            
+            res = res + "\(num1!)"
+            
+            numtxt.text = "\(res)"
+        }
+        
+      
+     
+      
+        
+    }
+    
+  
+    
 }
